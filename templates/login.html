@@ -1,0 +1,39 @@
+
+{% extends 'base.html' %}
+{% block extra_css %}
+    <link rel="stylesheet" href="/static/css/login.css">
+
+{% endblock %}
+{% block content %}
+
+    <div class="parent">
+    
+    <div class="login">
+    <h1>LOGIN</h1>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    {% for message in messages %}
+      <p style="color: green;">{{ message }}</p>
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
+    {{info}}
+    <form action="/login" method="POST">
+        <label for="email">Email</label><br><br>
+        <input type="email" id="email" name="email" placeholder="Enter Mail" required><br><br>
+        <label for="password">Password</label><br><br>
+        <input type="password" id="password" name="password" placeholder="Enter Password" required>
+        <br><br><button>Login</button>
+        <p>Don't have an account? <a href="/register" style="color: purple;text-decoration: underline;font-weight: 600;">Sign up</a></p>
+        <p><a href="/forgotpassword" style="color: purple;text-decoration: underline; font-weight: 600;">Forgot Password?</a></p>
+    </form>
+    
+    </div>
+
+    <div>
+        <img src="/static/images/img4.png" alt="login" height="500px">
+    </div>
+
+    
+    </div>
+{% endblock%}

@@ -1,0 +1,93 @@
+body{
+          
+            background-image: url('https://img.freepik.com/free-vector/gradient-purple-background-design-gradient-modern_343694-2592.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-attachment: fixed;
+        }
+        
+
+
+
+
+
+.content {
+    width: 80vw;
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 20px;
+    background: #f9f5ff;
+    border: 1px solid #dcd6f7;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(128, 90, 213, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content textarea {
+    resize: vertical;
+    min-height: 120px;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #c3bdf0;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.content textarea:focus {
+    border-color: purple;
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.2);
+    outline: none;
+}
+
+.content button {
+    background-color: purple;
+    color: white;
+    padding: 10px 18px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.content button:hover {
+    background-color: rgba(128, 0, 128, 0.852);
+    transform: scale(1.03);
+}
+
+
+.btnn {
+    cursor: pointer;
+    font-size: 24px;
+    color: purple;
+    background-color: #f3e8ff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    transition: background-color 0.3s;
+}
+
+.btnn:hover {
+    background-color: #e0d0ff;
+}
+
+.content-wrapper {
+    padding-top: 170px; /* or use margin-top if preferred */
+    width: 100%;
+    max-width: 800px;
+}
+

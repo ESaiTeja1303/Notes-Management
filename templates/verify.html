@@ -1,0 +1,22 @@
+
+{% extends 'base.html' %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="/static/css/forgotpass.css">
+
+{% endblock %}
+
+{% block content %}
+    
+    <div class="login">
+    <h1>Verification Page</h1>
+    {{info}}
+    <form action="/verify" method="POST">
+        <label for="otp">otp</label><br><br>
+        <input type="otp" id="otp" name="otp" placeholder="Enter otp" required><br><br>
+        <br><br><button>Submit</button>
+
+    </form>
+    
+    </div>
+{% endblock%}

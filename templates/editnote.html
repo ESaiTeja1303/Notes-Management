@@ -1,0 +1,28 @@
+
+{% extends 'base.html' %}
+{% block extra_css %}
+    <link rel="stylesheet" href="/static/css/editnote.css">
+
+{% endblock %}
+{% block content %}
+    <div class="content-wrapper">
+    <div style="display: flex;flex-direction: row;justify-content: center;align-items: center;gap: 10px;margin-top: -150px;">
+    <img src="/static/images/img6.png" alt="note" height="80px" style="margin-top: 10px;">
+    <h2>Edit Note</h2> 
+    </div>
+
+
+    <form  method="POST" class="content" >
+        <textarea name="content"  required>{{note.content}}</textarea>
+        <div style="display: flex;flex-direction: row;justify-content: space-around;">
+        <button type="submit">Save Note</button>
+        <button><a href="{{url_for('dashboard')}}" style="text-decoration: none;color: white;">Cancel</a></button>
+        </div>
+    </form>
+
+    
+    </div>
+
+
+{% endblock%}
+

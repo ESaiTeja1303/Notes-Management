@@ -1,0 +1,229 @@
+
+@media(min-width:600px){
+    
+    body{
+          
+            background-image: url('https://img.freepik.com/free-vector/gradient-purple-background-design-gradient-modern_343694-2592.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-attachment: fixed;
+        }
+        
+.notes {
+    background-color: #ffffff;
+    padding: 15px 20px;
+    max-width: 250px;
+    min-width: 120px;
+    opacity: 0.9;
+    box-shadow: 10px 5px 25px 10px purple;
+    border-radius: 12px;
+    text-align: left;
+    word-wrap: break-word;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: transform 0.2s;
+}
+
+.notes:hover {
+    transform: scale(1.05);
+}
+
+/* Grid layout */
+.notep {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-top: 40px;
+    padding: 0 20px;
+    margin-bottom: 150px;
+}
+
+
+
+
+.content {
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 20px;
+    background: #f9f5ff;
+    border: 1px solid #dcd6f7;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(128, 90, 213, 0.15);
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content textarea {
+    resize: vertical;
+    min-height: 120px;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #c3bdf0;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.content textarea:focus {
+    border-color: purple;
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.2);
+    outline: none;
+}
+
+.content button {
+    background-color: purple;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.content button:hover {
+    background-color: rgba(128, 0, 128, 0.805);
+    transform: scale(1.03);
+}
+
+
+.btnn {
+    cursor: pointer;
+    font-size: 24px;
+    color: purple;
+    background-color: #f3e8ff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    transition: background-color 0.3s;
+}
+
+.btnn:hover {
+    background-color: #e0d0ff;
+}
+
+.content-wrapper {
+    padding-top: 170px; /* or use margin-top if preferred */
+    width: 100%;
+    max-width: 800px;
+}
+
+}
+
+
+
+
+
+@media (max-width: 599px) {
+  body {
+    align-items: stretch; 
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background-image: url('https://img.freepik.com/free-vector/gradient-purple-background-design-gradient-modern_343694-2592.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-attachment: fixed;
+  }
+
+  .notep {
+    grid-template-columns: 1fr;       /* Stack notes vertically */
+    gap: 15px;
+    padding: 0 10px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+  }
+
+  .notes {
+    max-width: 90vw;
+    min-width: 80vw;
+    font-size: 14px;
+    padding: 14px 16px;
+    margin: 10px;
+    opacity: 1;                        /* Restore full opacity */
+    background-color: #ffffff;
+    box-shadow: 10px 5px 25px 10px purple;
+    border-radius: 12px;
+    text-align: left;
+    word-wrap: break-word;
+  }
+
+  .content-wrapper {
+    padding-top: 200px;
+    width: 95%;
+  }
+
+  .content {
+    padding: 15px;
+    margin-left: 20px;
+    font-size: 14px;
+    max-width: 90vw;
+    background: #f9f5ff;
+    border: 1px solid #dcd6f7;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(128, 90, 213, 0.25);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .content textarea {
+    font-size: 14px;
+    min-height: 100px;
+    padding: 10px;
+    border: 1px solid #c3bdf0;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+
+  .content textarea:focus {
+    border-color: purple;
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.2);
+    outline: none;
+  }
+
+  .content button {
+    background-color: purple;
+    color: white;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+
+  .content button:hover {
+    background-color: rgba(128, 0, 128, 0.805);
+    transform: scale(1.03);
+  }
+
+  .btnn {
+    font-size: 20px;
+    height: 60px;
+    background-color: #f3e8ff;
+    color: purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+  }
+
+  .btnn:hover {
+    background-color: #e0d0ff;
+  }
+}

@@ -1,0 +1,69 @@
+
+{% extends 'base.html' %}
+{% block extra_css %}
+    <link rel="stylesheet" href="/static/css/dashboard.css">
+
+{% endblock %}
+{% block content %}
+    <div class="content-wrapper">
+    <div class="cc" style="display: flex;flex-direction: row;justify-content: center;align-items: center;gap: 10px;margin-top: -150px;">
+    <img src="/static/images/img6.png" alt="note" height="80px" style="margin-top: 10px;text-wrap: wrap;">
+    <h2 style="font-size: clamp(16px, 6vw, 24px);">Welcome to Application {{usname}}!!    </h2> 
+    </div>
+
+
+
+    {% if notes %}
+    <div class="notep">
+    {% for note in notes %}
+    
+        <div class="notes">
+            <p>{{note.content}}</p>
+
+            <!--Notes Deletion-->
+            <button type="submit" style="padding: 5px 10px;border-radius: 12px;font-weight: 500;background-color: purple;color: white;border: none;cursor: pointer;"><a href="{{url_for('edit_note',note_id=note.id)}}" style="color: white;text-decoration: none;">Edit</a></button>
+            <button type="submit" style="padding: 5px 10px;border-radius: 12px;font-weight: 500;background-color: purple;color: white;border: none;cursor: pointer;"><a href="{{url_for('delete_note',note_id=note.id)}}" style="color: white;text-decoration: none;">Delete</a></button>
+            <!--
+            <form action="/delete_note" method="POST">
+            <input type="hidden" name="note_id" value="{{ note.id }}">
+            <button type="submit" style="padding: 5px 10px;border-radius: 12px;font-weight: 500;background-color: purple;color: white;border: none;cursor: pointer;">Delete</button>
+            </form>
+            -->
+        </div>
+        
+
+    {% endfor %}
+    <button onclick="cont()" class="notes btnn">➕</button>
+    </div>
+    {% else %}
+    <button onclick="cont()" class="notes btnn">➕</button>
+    <div class="notes">
+            <p>Empty Notes!</p>
+    </div>
+    {% endif %}
+
+
+    <!--Notes Creation-->
+    <form action="/create_note" method="POST" class="content" id="content">
+        <textarea name="content" placeholder="Write your note here" required></textarea>
+        <button type="submit">Add Note</button>
+    </form>
+    <!--end of note creation-->
+
+
+    </div>
+
+    <script>
+        function cont() {
+            const content = document.getElementById("content");
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "flex";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+
+    
+{% endblock%}
+

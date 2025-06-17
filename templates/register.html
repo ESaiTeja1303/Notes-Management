@@ -1,0 +1,30 @@
+
+{% extends 'base.html' %}
+    {% block extra_css %}
+    <link rel="stylesheet" href="/static/css/register.css">
+    {% endblock %}
+
+{% block content %}
+    <div class="part">
+    
+    <div class="register">
+    <h1>Register</h1>
+    {{info}}
+    <form action="/register" method="POST">
+        <label for="username">Username</label><br><br>
+        <input type="text" id="username" name="username" placeholder="Enter Username" required><br><br>
+        <label for="email">Email</label><br><br>
+        <input type="email" id="email" name="email" placeholder="Enter Mail" required><br><br>
+        <label for="password">Password</label><br><br>
+        <input type="password" id="password" name="password" placeholder="Enter Password" required>
+        <br><br><button>Register</button>
+        <p>Already registered? <a href="/login"  style="color: purple;text-decoration: underline;font-weight: 600;">Login</a></p>
+    </form>
+    </div>
+
+    <div>
+        <img src="/static/images/img3.png" alt="register">
+    </div>
+    
+    </div>
+{% endblock%}

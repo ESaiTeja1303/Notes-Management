@@ -1,0 +1,21 @@
+
+
+
+<nav class="navb">
+    <div class="nvb" style="display: flex;flex-direction: row;justify-content: space-between;">
+        <div style="margin-left: 20px;" class="b1">
+            <a href="/dashboard">Dashboard</a> 
+        </div>
+        <div  style="padding-right: 10px;display: flex;margin-right: 20px;width: 120px;flex-direction: row;justify-content: space-between;">
+            {% if session.get('verified login') %}
+            <a href="/logout" style="padding-left: 70px;">Logout</a>
+            {% else %}
+            <a href="/login">Login</a> 
+            <a href="/register">Register</a>
+            {% endif %}
+            
+        </div>
+        
+    </div>
+    
+</nav>

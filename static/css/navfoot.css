@@ -1,0 +1,148 @@
+
+
+@media(min-width:600px){
+    body{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.main-content {
+    padding-top: 60px;
+    flex: 1;
+}
+.nvb{
+    position: fixed;
+    background-color: purple;
+    color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    left: 0;
+    height: 50px;
+    align-items: center;
+    opacity: 0.9;
+    z-index: 1000;
+}
+a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.866);
+}
+a:hover{
+    text-decoration: solid underline;
+    transform: scale(1.1,1.1);
+    color: white;
+}
+
+.b1:hover{
+    transform: scale(1.1);
+}
+
+.foot{
+    margin-top: 30px;
+    bottom:0;
+    width: 100%;
+    background-color: rgb(148, 3, 148);
+    padding: 20px 0;
+}
+
+.f1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    gap: 400px;
+}
+
+.f2{
+    margin-top: 20px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.577);
+}
+}
+
+
+@media(max-width:599px){
+   body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;              /* ✅ Add this */
+    width: 100%;
+    overflow-x: hidden;      /* ✅ Add this */
+    box-sizing: border-box;  /* ✅ Optional but helpful */
+}
+html {
+    overflow-x: hidden;
+}
+
+
+    .main-content {
+        margin: 5px auto;
+        padding-top: 60px;
+        flex: 1;
+        
+    }
+    .nvb{
+        position: fixed;
+        background-color: purple;
+        color: white;
+        top: 0;
+        left: 0;
+        width: 100%;
+        left: 0;
+        height: 50px;
+        align-items: center;
+        opacity: 0.9;
+        z-index: 1000;  
+    }
+    a{
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.866);
+    }
+    a:hover{
+        text-decoration: solid underline;
+        transform: scale(1.1,1.1);
+        color: white;
+    }
+
+    .b1:hover{
+    transform: scale(1.1);
+    }
+
+.foot {
+    margin-top: 30px;
+    width: 100%;
+    background-color: rgb(148, 3, 148);
+    padding: 20px;
+    color: white;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+
+    .f1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        color: white;
+        gap: 50px;
+    }
+
+    .f2{
+    margin-top: 20px;
+        font-weight: bold;
+        color: rgba(255, 255, 255, 0.577);
+    }
+    .ff{
+        margin: 10px auto;
+    }
+}
