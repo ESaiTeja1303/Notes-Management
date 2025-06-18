@@ -1,3 +1,7 @@
+
+
+@media (min-width: 600px){
+
 body{
             display: flex;
             justify-content: center;
@@ -78,4 +82,64 @@ p a{
 }
 p a:hover{
     transform: scale(1.05);
+}
+}
+
+
+
+@media (max-width: 599px) {
+    body {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 0;
+        padding-top: 20px;
+        height: auto;
+        background-image: url('https://img.freepik.com/free-vector/gradient-purple-background-design-gradient-modern_343694-2592.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .parent {
+        flex-direction: column;
+        margin: 0 auto;
+        width: 100%;
+        align-items: center;
+    }
+
+    .login {
+        width: 80%;
+        padding: 20px;
+        margin: 20px;
+        height: auto;
+        opacity: 60%;
+        box-shadow: 5px 3px 15px 5px purple;
+        border-radius: 25px;
+        background-color: white;
+    }
+
+    .login h1 {
+        font-size: 24px;
+    }
+
+    input {
+        padding: 14px;
+        font-size: 16px;
+        box-sizing: border-box;
+        background-color: #e5e5e5;
+        border: none;
+        border-radius: 8px;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 16px;
+        border-radius: 8px;
+    }
+
+    .parent img {
+        max-width: 90%;
+        height: auto;
+    }
 }
