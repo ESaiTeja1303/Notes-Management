@@ -1,0 +1,131 @@
+
+@media(min-width:600px){
+           body{
+            display: flex;
+            justify-content: center;
+            margin-top: 150px;
+            background: linear-gradient(135deg, #cc2b5e, #753a88);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            margin: 0;
+            
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .nvb{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            margin-left: -450px;
+            padding: 20px;
+            gap: 30px;
+            
+        }
+
+        .cen{
+            color: aqua;
+            
+            margin-top: 200px;
+        }
+
+        img{
+            margin-left: 80px;    
+        }
+        
+
+        .foot{
+    margin-top: 30px;
+    margin-left: -459.5px;
+   position: absolute;
+    bottom:-225px;
+    width: 100%;
+    background-color: rgb(148, 3, 148);
+}
+
+.f1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    gap: 400px;
+}
+
+.f2{
+    margin-top: 20px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.577);
+}
+}
+
+@media(max-width:599px){
+    body {
+        background: linear-gradient(135deg, #cc2b5e, #753a88);
+        background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            margin: 0;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 20px;
+        margin-top: 0;
+    }
+
+    .nvb {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        margin-left: 0;
+        padding: 10px;
+        gap: 15px;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        padding: 10px;
+    }
+
+    .nvb::-webkit-scrollbar {
+        display: none; /* Optional: hides scrollbar for cleaner look */
+    }
+
+    .cen {
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    img {
+        margin-left: 0;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .foot {
+        position: relative;
+        background-color: rgb(148, 3, 148);
+        bottom: 0;
+        margin-left: 0;
+        width: 100%;
+        padding: 20px 10px;
+        box-sizing: border-box;
+    }
+
+    .f1 {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .f2 {
+        font-size: 14px;
+        text-align: center;
+    }
+}
