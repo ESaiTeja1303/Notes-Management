@@ -3,10 +3,11 @@ import random,emaillo
 from itsdangerous import URLSafeTimedSerializer,SignatureExpired
 import bcrypt
 from database import db
+from flask_sqlalchemy import SQLAlchemy
 app=Flask(__name__)
 
-app.secret_key="teja123" 
 
+app.secret_key="teja123" 
 s=URLSafeTimedSerializer(app.secret_key)  
 
 
